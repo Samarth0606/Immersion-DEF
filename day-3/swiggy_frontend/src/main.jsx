@@ -9,6 +9,7 @@ import Signin from './components/Signin.jsx'
 import Body from './components/Body.jsx'
 import Error from './components/Error.jsx'
 import RestaurantDetails from './components/RestaurantDetails.jsx'
+import Clock from './components/Clock.jsx'
 
 const appRoutes = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const appRoutes = createBrowserRouter([
       {
         path:"/restaurants/:id",
         element: <RestaurantDetails />
+      },
+      {
+        path:"/clock",
+        element: <Clock />
       },
     ]
   }
